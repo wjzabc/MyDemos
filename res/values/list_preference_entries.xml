@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="entries">
+        <item >item1</item>
+        <item >item2</item>
+        <item >item3</item>
+        <item >item4</item>
+        <item >item5</item>
+        <item >item6</item>
+    </string-array>
+        <string-array name="entries_value">
+        <item >item1_entries_value</item>
+        <item >item2_entries_value</item>
+        <item >item3_entries_value</item>
+    </string-array>
+        <string-array name="entries_others">
+        <item >静默安装与静默卸载</item>
+        <item >获取手机网络状态信息</item>
+        <item >获取网络连接信息</item>
+        <item >反射机制获取类静态属性</item>
+        <item >send com.xxx.xxx 广播</item>
+        <item >item6</item>
+    </string-array>
+</resources>

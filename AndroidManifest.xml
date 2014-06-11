@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.weibo.wjzabc.mydemos"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER_ADVANCED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.BIND_APPWIDGET" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <!-- <uses-permission android:name="android.permission.INSTALL_PACKAGES" /> -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.weibo.wjzabc.mydemos.cleardata.ClearDataCallBackActivity"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.MyDemos"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.cleardata.clearDataActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- 以下是我自己的demo -->
+        <!-- 以下是我自己的demo -->
+        <!-- 以下是我自己的demo -->
+        <!-- 以下是我自己的demo -->
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.activity.AndroidSystemToRestoreTheStateOfTheViews"
+            android:label="@string/my_demos_AndroidSystemToRestoreTheStateOfTheViews" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.activity.ActivityLifeCycle"
+            android:theme="@style/Theme.NotitleBar.PushInOut"
+            android:label="Activity/ActivityLifeCycle" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.savingdata.PreferencesInXML"
+            android:label="Preference/PreferenceInXml"
+            android:theme="@android:style/Theme.NoTitleBar" > 
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.views.ViewPagerTestActivity"
+            android:label="Views/ViewPagerTestActivity" 
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.views.TextWatcher"
+            android:label="@string/title_activity_text_watcher" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.views.Table"
+            android:label="@string/title_activity_table" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.weibo.wjzabc.mydemos.views.AlbumsActivity" >
+        </activity>
+        <activity android:name="com.weibo.wjzabc.mydemos.views.ArtistsActivity" >
+        </activity>
+        <activity android:name="com.weibo.wjzabc.mydemos.views.SongsActivity" >
+        </activity>
+
+        <!-- Exceptions -->
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.Exceptions.SQLiteDiskIOExceptionActivity"
+            android:label="Exceptions/SQLiteDiskIOExceptionActivity" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.Exceptions.ListViewIndexOutOfBoundsException"
+            android:label="Exceptions/ListViewIndexOutOfBoundsException" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.cleardata.ClearDataCallBackActivity"
+            android:label="@string/title_activity_clear_data_call_back" >
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.database.CursorContentObserverActivity"
+            android:label="DataBase/CursorContentObserverActivity" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.java.SynchronizedActivity"
+            android:label="@string/title_activity_synchronized" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.performance.Traceview"
+            android:label="@string/title_activity_traceview" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.views.TouchEventDispatchActivity"
+            android:label="@string/title_activity_touch_event_dispatch" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.views.ImageActivity"
+            android:label="@string/title_activity_image" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.picture_processing.PictureProcessingActivity"
+            android:label="Picture Processing/PictureProcessingActivity" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.others.Dp_px_Activity"
+            android:label="@string/title_activity_dp_px_" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.others.ApkSignConfictionAcitivity"
+            android:label="@string/title_activity_apk_sign_confiction_acitivity" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.others.OthersAcitivity"
+            android:label="aaaa_others" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.views.GridViewActivity"
+            android:label="@string/title_activity_grid_view" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.telephony.SMSActivity"
+            android:label="@string/title_activity_sms" >
+            <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.weibo.wjzabc.mydemos.appwidget.WidgetProvider" >
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_demo" >
+            </meta-data>
+
+            <intent-filter>
+                <action android:name="widget_clicked" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.weibo.wjzabc.mydemos.appwidget.AppWidgetsHostActivity"
+            android:label="@string/title_activity_app_widgets_host" >
+                        <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+                <activity
+            android:name="com.weibo.wjzabc.mydemos.Exceptions.ReOpenAlreadyClosedSQLiteDatabase"
+            android:label="Exceptions/ReOpenAlreadyClosedSQLiteDatabase">
+                        <intent-filter>
+                <action android:name="com.weibo.wjzabc.mydemos" />
+
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+        
+        
+        
+        <provider android:name="com.weibo.wjzabc.mydemos.Exceptions.MyContentProvider"
+            android:authorities="com.weibo.wjzabc.qqq"
+            android:writePermission="com.weibo.wjzabc.qqq.permission.w"
+            android:readPermission="com.weibo.wjzabc.qqq.permission.r" 
+            android:exported="true"
+            />
+    </application>
+
+</manifest>

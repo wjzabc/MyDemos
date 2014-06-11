@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center" >
+
+     <com.weibo.wjzabc.mydemos.savingdata.PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="" />
+          <com.weibo.wjzabc.mydemos.savingdata.PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_sync"
+            android:summary="CheckBoxPreference summary"
+            android:title="CheckBoxPreference title" 
+            android:icon="@drawable/ic_launcher"/>
+
+        <ListPreference
+            android:defaultValue="ListPreference default Value"
+            android:dependency="pref_sync"
+            android:dialogTitle="ListPreference dialogTitle"
+            android:entries="@array/entries"
+            android:entryValues="@array/entries_value"
+            android:key="pref_syncConnectionType"
+            android:title="ListPreference title" />
+    
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_sync1"
+            android:summary="CheckBoxPreference summary"
+            android:title="CheckBoxPreference title" />
+     <com.weibo.wjzabc.mydemos.savingdata.PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="" />        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_sync2"
+            android:summary="CheckBoxPreference summary"
+            android:title="CheckBoxPreference title" />
+
+        <Preference android:title="open web" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.baidu.com" />
+        </Preference>
+
+    <PreferenceScreen android:title="sub PreferenceScreen" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_sync3"
+            android:summary="CheckBoxPreference summary"
+            android:title="CheckBoxPreference title" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_sync4"
+            android:summary="CheckBoxPreference summary"
+            android:title="CheckBoxPreference title" />
+    </PreferenceScreen>
+
+</PreferenceScreen>

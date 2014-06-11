@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pageone">第一页</string>
+    <string name="pagetwo">第2页</string>
+    <string name="pagethree">第3页</string>
+    <string name="ClearDataCallBackActivity">ClearDataCallBackActivity</string>
+    <string name="more_than_oneline">jalkjdf;lakdlfkajsl;dfj;lgadsfasdfadsfo我们的法定分俺的沙发的时候阿道夫</string>
+    <string name="no_id">no id</string>
+    <string name="have_a_id">have a id</string>
+    <string name="app_name">MyDemos</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="my_demos_AndroidSystemToRestoreTheStateOfTheViews">Activity/Android System To Restore The State Of The Views</string>
+    <string name="my_demos_AndroidSystemToRestoreTheStateOfTheViews_msg">Note: In order for the Android system to restore the state of the views in your activity, each view must have a unique ID, supplied by the android:id attribute.</string>
+    <string name="title_activity_text_watcher">Views/TextWatcher</string>
+    <string name="title_activity_table">Views/Table</string>
+    <string name="title_activity_clear_data_call_back">ClearDataCallBackActivity</string>
+    <string name="title_activity_cursor_content_observer">CursorContentObserverActivity</string>
+    <string name="title_activity_synchronized">java/SynchronizedActivity</string>
+    <string name="title_activity_traceview">performance/Traceview</string>
+    <string name="title_activity_touch_event_dispatch">Views/TouchEventDispatchActivity</string>
+    <string name="title_activity_image">Views/ImageActivity</string>
+    <string name="title_activity_dp_px_">others/Dp_px_Activity</string>
+    <string name="title_activity_apk_sign_confiction_acitivity">others/ApkSignConfictionAcitivity</string>
+    <string name="title_activity_grid_view">Views/GridView</string>
+    <string name="title_activity_sms">others/SMS</string>
+    <string name="title_activity_app_widgets_host">App/AppWidgetsHostActivity</string>
+    <string name="px">px</string>
+    <string name="dp1">dp=px*160/DensityDpi</string>
+    <string name="dp2">dp=px*160/ppi</string>
+
+</resources>
